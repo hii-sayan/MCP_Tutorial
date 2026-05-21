@@ -1,7 +1,8 @@
 import { McpServer  } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import z from "zod";
+import z, { mime } from "zod";
 import fs from "node:fs/promises";
+import { MIMEType } from "node:util";
 
 const server = new McpServer(
     {
@@ -16,6 +17,31 @@ const server = new McpServer(
         },
     }
 )
+
+server.resource(
+    "users",
+    "users://all",
+    {
+      description: "Get all users data from the database",
+      title: "Users",
+      mimeType: "application/json",
+    },
+    async uri => {
+      const users = await import("./data/users.json", {
+        with: { type: "json" },
+      }).then(m => m.default)
+  
+      return {
+        contents: [
+          {
+            uri: uri.href,
+            text: JSON.stringify(users),
+            mimeType: "application/json",
+          },
+        ],
+      }
+    }
+  )
 
 server.tool("create-user", "Create a nre user in the database", {
     name: z.string(),
