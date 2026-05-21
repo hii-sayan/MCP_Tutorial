@@ -1,0 +1,58 @@
+[
+  {
+    "id": "usr_001",
+    "name": "Jordan Chen",
+    "email": "jordan.chen@mail.example.com",
+    "address": "742 Evergreen Terrace, Springfield, IL 62704",
+    "phone": "+1-217-555-0142"
+  },
+  {
+    "id": "usr_002",
+    "name": "Priya Sharma",
+    "email": "priya.sharma@acme.io",
+    "address": "18 MG Road, Bengaluru, Karnataka 560001",
+    "phone": "+91-80-5555-8821"
+  },
+  {
+    "id": "usr_003",
+    "name": "Marcus Williams",
+    "email": "m.williams@northwind.dev",
+    "address": "221B Baker Street, London NW1 6XE, UK",
+    "phone": "+44-20-7946-0958"
+  },
+  {
+    "id": "usr_004",
+    "name": "Elena Rodriguez",
+    "email": "elena.r@startup.co",
+    "address": "Calle Mayor 12, Madrid 28013, Spain",
+    "phone": "+34-91-555-3300"
+  },
+  {
+    "id": "usr_005",
+    "name": "Sam Okafor",
+    "email": "sam.okafor@inbox.example.net",
+    "address": "45 Admiralty Way, Lagos 101241, Nigeria",
+    "phone": "+234-803-555-0199"
+  },
+  {
+    "id": "usr_006",
+    "name": "Hannah Kim",
+    "email": "hannah.kim@design.studio",
+    "address": "88 Gangnam-daero, Seoul 06030, South Korea",
+    "phone": "+82-2-555-7710"
+  },
+  {
+    "id": "usr_007",
+    "name": "Lucas Müller",
+    "email": "lucas.mueller@firma.de",
+    "address": "Unter den Linden 5, Berlin 10117, Germany",
+    "phone": "+49-30-555-4420"
+  },
+  {
+    "id": "usr_008",
+    "name": "Ava Thompson",
+    "email": "ava.t@pacificmail.com",
+    "address": "1200 Ocean Ave, Santa Monica, CA 90401",
+    "phone": "+1-310-555-9033"
+  }
+]
